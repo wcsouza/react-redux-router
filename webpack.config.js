@@ -4,11 +4,13 @@ const webpackConfig = {
     entry: './src/index.jsx',
     output: {
         path: __dirname + '/public',
-        filename: './dist.js'
+        filename: './dist.js',
+        //publicPath: '/'
     },
     devServer: {
         port: 8080,
         contentBase: './public',
+        historyApiFallback: true
     },
     resolve: {
         extensions: ['.js', '.jsx']

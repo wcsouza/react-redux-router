@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as action from '../store/actions/testeActions';
+import Teste3 from './teste3';
 
 class Teste extends Component {
     state = { inputValue: '' };
@@ -28,6 +29,14 @@ class Teste extends Component {
                     <div className="col-sm-3">
                         <button class="btn btn-primary" onClick={this.handleEvent}>Alterar Valor</button>
                     </div>
+                </div>
+                <div className="row">
+                    <p>teste</p>
+                    <Teste3 testando="paaaramm" />
+                </div>
+                <div className="row">
+                    <p>teste2</p>
+                    <Teste3 />
                 </div>
             </div>
         );
